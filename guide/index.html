@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Play Zoetrope Vinyl Records — Step-by-Step Guide</title>
+    <meta name="description" content="Learn how to visualize zoetrope vinyl records using a strobe light or your iPhone. Works with Blood Records, Vinyl Moon, and all zoetrope picture discs.">
+    <meta name="keywords" content="zoetrope vinyl, zoetrope record, how to play zoetrope vinyl, blood records zoetrope, strobe light vinyl, animated vinyl record, picture disc animation, zoetrope turntable, vinyl animation app">
+    <meta property="og:title" content="How to Play Zoetrope Vinyl Records">
+    <meta property="og:description" content="Step-by-step guide to visualize zoetrope vinyl animations using your iPhone as a strobe light.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://zoetrope.it/guide">
+    <link rel="canonical" href="https://zoetrope.it/guide">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What is a zoetrope vinyl record?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "A zoetrope vinyl is a record with a printed pattern on its surface that creates an animation when viewed under a strobe light at the correct frequency. The effect is based on the same principle as a 19th-century zoetrope — persistence of vision. Labels like Blood Records, Vinyl Moon, and others release limited edition zoetrope picture discs."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How do I see the animation on a zoetrope record?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "You need a strobe light flashing at the right frequency while the record spins on a turntable. The easiest way is to use the Zoetrope It app for iPhone — it turns your flashlight into a synced strobe. Just set your RPM, frame count, and the app does the rest."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What strobe frequency do I need for a zoetrope vinyl?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The frequency depends on your turntable speed and the number of animation frames on the record. The formula is: (RPM ÷ 60) × number of frames. For example, a 33⅓ RPM record with 40 frames needs a strobe at 22.2 Hz. The Zoetrope It app calculates this automatically."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How many frames does my zoetrope record have?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Count the number of repeated images or shapes around one full revolution of the record. Most zoetrope vinyls have between 36 and 48 frames. If you're unsure, start with 40 and use the fine adjust slider in the Zoetrope It app to dial it in."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Can I use my phone as a strobe light for zoetrope records?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. The Zoetrope It app for iPhone turns your flashlight into a precision strobe light tuned to the exact frequency your record needs. It's the easiest way to view zoetrope vinyl animations without buying dedicated equipment."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Can I record a zoetrope vinyl animation on video?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. The Zoetrope It app includes a camera mode that locks the frame rate to match your record's animation. This captures the zoetrope effect directly on video without needing a strobe — the camera shutter acts as the strobe."
+                }
+            }
+        ]
+    }
+    </script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            background: #000;
+            color: rgba(255,255,255,0.85);
+            min-height: 100vh;
+            padding: 60px 24px;
+            line-height: 1.7;
+        }
+
+        .container {
+            max-width: 640px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 32px;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 16px;
+            line-height: 1.3;
+        }
+
+        .intro {
+            font-size: 17px;
+            color: rgba(255,255,255,0.55);
+            margin-bottom: 48px;
+            line-height: 1.6;
+        }
+
+        h2 {
+            font-size: 20px;
+            font-weight: 600;
+            color: #fff;
+            margin-top: 48px;
+            margin-bottom: 16px;
+        }
+
+        h3 {
+            font-size: 17px;
+            font-weight: 600;
+            color: rgba(255,255,255,0.9);
+            margin-top: 32px;
+            margin-bottom: 12px;
+        }
+
+        p {
+            margin-bottom: 16px;
+            font-size: 15px;
+            color: rgba(255,255,255,0.6);
+        }
+
+        .step {
+            margin-bottom: 24px;
+            padding-left: 20px;
+            border-left: 2px solid rgba(255,255,255,0.1);
+        }
+
+        .step-number {
+            font-size: 13px;
+            font-weight: 700;
+            color: rgba(255,255,255,0.3);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 6px;
+        }
+
+        .step p {
+            margin-bottom: 8px;
+        }
+
+        .faq-item {
+            margin-bottom: 32px;
+        }
+
+        .faq-item h3 {
+            margin-top: 0;
+        }
+
+        .formula {
+            background: rgba(255,255,255,0.06);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 12px;
+            padding: 20px 24px;
+            margin: 24px 0;
+            text-align: center;
+        }
+
+        .formula code {
+            font-size: 18px;
+            font-weight: 600;
+            color: #fff;
+            font-family: 'Inter', monospace;
+        }
+
+        .formula .label {
+            font-size: 13px;
+            color: rgba(255,255,255,0.35);
+            margin-top: 8px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 24px 0;
+        }
+
+        th {
+            text-align: left;
+            font-size: 13px;
+            font-weight: 600;
+            color: rgba(255,255,255,0.4);
+            padding: 10px 16px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+        td {
+            font-size: 15px;
+            color: rgba(255,255,255,0.6);
+            padding: 10px 16px;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .cta {
+            display: inline-block;
+            margin-top: 32px;
+            margin-bottom: 16px;
+        }
+
+        .cta img {
+            height: 48px;
+        }
+
+        a {
+            color: rgba(255,255,255,0.5);
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #fff;
+        }
+
+        .back {
+            display: inline-block;
+            margin-top: 48px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .tip {
+            background: rgba(255,255,255,0.04);
+            border-radius: 12px;
+            padding: 16px 20px;
+            margin: 16px 0;
+            font-size: 14px;
+            color: rgba(255,255,255,0.5);
+        }
+
+        .tip strong {
+            color: rgba(255,255,255,0.7);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>How to Play Zoetrope Vinyl Records</h1>
+        <p class="intro">Got a zoetrope vinyl from Blood Records, Vinyl Moon, or another label? Here's everything you need to know to see the animation come to life.</p>
+
+        <h2>What is a zoetrope record?</h2>
+        <p>A zoetrope vinyl has a pattern printed on its surface — usually a series of slightly different images arranged in a circle. When the record spins on a turntable and you view it under a strobe light at the right frequency, the images blend together into a smooth animation. It's the same optical illusion behind the 19th-century zoetrope toy.</p>
+        <p>Many artists and labels release limited edition zoetrope picture discs. <a href="https://www.bloodrecords.org" target="_blank" rel="noopener">Blood Records</a> is one of the most well-known, regularly dropping zoetrope vinyl editions that animate album artwork right on the record.</p>
+
+        <h2>What you need</h2>
+        <p>Just two things:</p>
+        <div class="step">
+            <p><strong>A turntable</strong> — any standard turntable that plays at 33⅓, 45, or 78 RPM.</p>
+        </div>
+        <div class="step">
+            <p><strong>A strobe light</strong> — or just your iPhone. The <a href="https://apps.apple.com/app/id6763123333">Zoetrope It</a> app turns your flashlight into a precision strobe tuned to the exact frequency your record needs.</p>
+        </div>
+
+        <h2>Step-by-step guide</h2>
+
+        <div class="step">
+            <div class="step-number">Step 1</div>
+            <p><strong>Place your zoetrope vinyl on the turntable</strong> and set it to the correct speed (usually 33⅓ RPM — check the record sleeve).</p>
+        </div>
+
+        <div class="step">
+            <div class="step-number">Step 2</div>
+            <p><strong>Count the frames.</strong> Look at the printed pattern and count how many repeated images go around one full revolution. Most records have between 36 and 48 frames.</p>
+        </div>
+
+        <div class="step">
+            <div class="step-number">Step 3</div>
+            <p><strong>Open Zoetrope It</strong> and set your RPM and frame count. The app calculates the strobe frequency automatically.</p>
+        </div>
+
+        <div class="step">
+            <div class="step-number">Step 4</div>
+            <p><strong>Turn on the strobe</strong> and point your phone's flashlight at the spinning record. Darken the room for the best effect.</p>
+        </div>
+
+        <div class="step">
+            <div class="step-number">Step 5</div>
+            <p><strong>Fine-tune</strong> using the adjust slider until the animation looks perfectly smooth and still.</p>
+        </div>
+
+        <div class="tip">
+            <strong>Tip:</strong> If the animation appears to move slowly forward or backward, use the fine adjust slider to dial it in. A perfectly synced strobe makes the animation appear frozen in motion.
+        </div>
+
+        <h2>The math behind it</h2>
+        <p>The strobe frequency is calculated from your turntable speed and the number of animation frames:</p>
+
+        <div class="formula">
+            <code>Frequency = (RPM ÷ 60) × Frames</code>
+            <div class="label">Result in Hz (flashes per second)</div>
+        </div>
+
+        <p>Here are some common combinations:</p>
+
+        <table>
+            <tr><th>RPM</th><th>Frames</th><th>Frequency</th></tr>
+            <tr><td>33⅓</td><td>36</td><td>20.0 Hz</td></tr>
+            <tr><td>33⅓</td><td>40</td><td>22.2 Hz</td></tr>
+            <tr><td>33⅓</td><td>48</td><td>26.7 Hz</td></tr>
+            <tr><td>45</td><td>36</td><td>27.0 Hz</td></tr>
+            <tr><td>45</td><td>40</td><td>30.0 Hz</td></tr>
+            <tr><td>45</td><td>48</td><td>36.0 Hz</td></tr>
+        </table>
+
+        <div class="tip">
+            <strong>Don't want to do the math?</strong> The Zoetrope It app handles all of this for you — just pick your RPM and frame count.
+        </div>
+
+        <h2>Recording the animation</h2>
+        <p>Want to share the effect on video? Zoetrope It has a camera mode that locks your iPhone's frame rate to match the record's animation. The camera shutter acts as the strobe, capturing the zoetrope effect directly — no flickering, no strobe needed.</p>
+
+        <h2>Frequently asked questions</h2>
+
+        <div class="faq-item">
+            <h3>Can I use any phone flashlight app?</h3>
+            <p>Regular flashlight apps don't strobe at precise frequencies. Zoetrope It uses a hardware-level strobe synced to your exact turntable speed and frame count, which is what makes the animation visible.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>Why can't I see the animation?</h3>
+            <p>The most common issues: wrong frame count (recount carefully), room isn't dark enough, or the strobe needs fine-tuning. Use the fine adjust slider to nudge the frequency until the animation locks in.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>Does it work with any zoetrope vinyl?</h3>
+            <p>Yes — it works with any zoetrope picture disc regardless of label, including releases from Blood Records, Vinyl Moon, and indie pressings. Just match the RPM and frame count.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>What's the photosensitivity warning about?</h3>
+            <p>Strobe lights can trigger seizures in people with photosensitive epilepsy. The app shows a warning on first launch. If you or anyone nearby is sensitive to flashing lights, use the camera mode instead — it doesn't use a visible strobe.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>Is the app free?</h3>
+            <p>Zoetrope It is available on the App Store for iPhone.</p>
+        </div>
+
+        <h2>Get started</h2>
+        <p>Download Zoetrope It and see your vinyl come to life.</p>
+
+        <a href="https://apps.apple.com/app/id6763123333" class="cta">
+            <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <br>
+        <a href="/" class="back">&larr; Back to Zoetrope It</a>
+    </div>
+</body>
+</html>
